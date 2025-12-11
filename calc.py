@@ -1,5 +1,5 @@
 import random 
-#new comment
+#new comment2
 def guess_the_number_game():
     """
     A simple guessing game where the player tries to guess a secret number
