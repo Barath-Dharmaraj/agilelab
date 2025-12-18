@@ -1,4 +1,5 @@
 import random 
+from scoring import calculate_final_score
 #new comment2
 def guess_the_number_game():
     """
@@ -40,6 +41,10 @@ def guess_the_number_game():
                 # Correct guess!
                 print(f"\nCongratulations, {guess} is the correct number!")
                 print(f"You guessed it in {attempts} attempts.")
+                # --- Using the extra feature from scoring.py ---
+                final_score = calculate_final_score(attempts, max_attempts)
+                print(f"Your Final Score: {final_score} points!")
+                
                 return # End the function (and game)
 
         except ValueError:
